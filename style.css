@@ -1,0 +1,15 @@
+h1::before{
+    content: "Hello ";
+    color: aqua ;
+}
+h1::after{
+    content: " hi";
+    color: rgb(0, 255, 34);
+}
+body{
+    counter-reset: section;
+}
+p::before{
+    counter-increment: section;
+    content:"love"counter(section) " : ";
+}
